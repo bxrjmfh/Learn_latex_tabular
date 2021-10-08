@@ -1,4 +1,9 @@
 \documentclass{ctexart} 
+% 设置表格的列格式
+\usepackage{array}
+% 三线表宏包
+\usepackage{booktabs}
+
 \begin{document} 
 \noindent 左边界 
 \hfill 右边界 % 边界参照 
@@ -20,4 +25,32 @@
             hline 
         \end{tabular} 
     \end{table} 
+
+    \begin{table}[h]
+        \centering
+        \vspace{3pt}
+        \begin{tabular}{>{\centering\arraybackslash}p{5em}>{\centering\arraybackslash}p{30em}}
+        \toprule % 绘制第一条线
+        %\specialrule{<rule width>}{<above space>}{<below space>}
+        %eg:\toprule    == \specialrule{.08em}{0pt} {.65ex}
+        %可以更改参数来创建不同粗细的三线表
+        Symbol & Meaning \\ \midrule
+        $t$ & Time \\
+        $N$ & Total reported opioid cases\\
+        $N_t$ & Total reported drug cases\\
+        $\lambda$ & Average cases induced by a single case\\
+        $A_t$ & Status at $t$ \\ 
+        $E$ & Set containing socio-economic factors with high correlation $t$ \\
+        $T$ & Transition matrix\\ 
+        $i(t)$ & Proportion of opioid cases in all drug cases at $t$ \\
+        $\mu_1$ & Average number of drug cases induced by an existing drug case \\
+        $\mu_2$ & Number of opioid cases induced among all drug cases \\
+        $\gamma$ & Drug spread slow down factor \\
+        $i_0$ & Status at $t$ \\ 
+        $H$ & Information Entropy \\ 
+        $p_0$ & Initial number of drug cases\\
+        
+        \bottomrule
+        \end{tabular}
+    \end{table}
 \end{document}
