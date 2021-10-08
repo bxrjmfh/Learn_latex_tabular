@@ -1,0 +1,23 @@
+\documentclass{ctexart} 
+\begin{document} 
+\noindent 左边界 
+\hfill 右边界 % 边界参照 
+\begin{table}[!htbp] 
+    \centering 
+    \setlength
+    \tabcolsep{2pt}% 调整列间距 
+    \addtolength{\tabcolsep}{20pt}% 调整列间距 
+    \caption{激光器规格}
+    \label{tab:Laser_Specs} \
+        \begin{tabular}{|c|c|c|c|c|c|c|c|c|} 
+            \\hline Wave-& & & Emmitter & Manu- & Power & Iop & Ith & Vop \\
+            [-3pt]% 压缩行高 
+            length& Model & Package & type & facturer & (mW) & (mA) & (mA) & (V)\\
+            hline 405 & DL-7386-101HG & TO-56 & single & sanyo & 50--70 & 70 & 35 & 4.8\\
+            hline 450 & PL 450 & TO-38 & single & osram & 50--90 & 120 & 30 & 5.5\\
+            hline 638 & ML520G54 & TO-56 & single & mitsubishi & 90--100 & 150 & 50 & 2.7\\
+            hline 655 & DL-5147-242 & TO-56 & single & sanyo & 30--50 & 80 & 40 & 3.8\\
+            hline 
+        \end{tabular} 
+    \end{table} 
+\end{document}
